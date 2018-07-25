@@ -25,7 +25,7 @@ class App extends Component {
                   <Link to='/main'>关于</Link>
               </li>
               <li>
-                  123
+                  <h1>洪格轩</h1>
               </li>
           </ul>
       </div>
