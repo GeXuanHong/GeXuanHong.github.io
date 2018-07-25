@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button } from 'antd';
+import { Link } from 'react-router-dom';
+
+function opps() {
+    console.log('--');
+}
 
 class App extends Component {
   render() {
@@ -14,7 +19,15 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-          <Button type="primary">Ant</Button>
+          <Button type="primary" onClick={opps}>Ant</Button>
+          <ul>
+              <li>
+                  <Link to='/main'>关于</Link>
+              </li>
+              <li>
+                  123
+              </li>
+          </ul>
       </div>
     );
   }
