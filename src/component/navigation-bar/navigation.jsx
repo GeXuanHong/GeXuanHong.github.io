@@ -3,6 +3,7 @@ import "./navigation.less";
 import "../../assets/css/common.less"
 import { Avatar, Popover, Icon } from 'antd';
 import Qcode from '../../assets/img/Qcode.png';
+import { Link } from 'react-router-dom';
 
 export default class Main extends Component {
     constructor(props) {
@@ -22,10 +23,12 @@ export default class Main extends Component {
             <div className='navigation'>
                 <div className='nav-content'>
                     <div className='logo'>
-                        <a><h1 style={{color: '#87d068'}}>BLOG</h1></a>
+                        <a><h1 style={{color: '#87d068', fontSize: '26px', fontWeight: '700'}}>BLOG</h1></a>
                     </div>
                     <div className='tab'>
-                        <a className='tab-item'>首页</a>
+                        <Link to='/main'>
+                            <a className='tab-item'>首页</a>
+                        </Link>
                         <a className='tab-item'>笔记</a>
                         <a className='tab-item'>分享</a>
                     </div>
