@@ -11,14 +11,15 @@ class App extends Component {
       <div className="App">
           <Nav/>
           <div className='content'>
-              <Row gutter={48}>
-                  <div className='left'>
-                      <Col span={8}>导航栏</Col>
-                  </div>
-                  <div className='right'>
-                      <Col span={16}>内容</Col>
-                  </div>
-              </Row>
+              <h1>正在开发中。。。</h1>
+              {/*<Row gutter={48}>*/}
+                  {/*<div className='left'>*/}
+                      {/*<Col span={8}>导航栏</Col>*/}
+                  {/*</div>*/}
+                  {/*<div className='right'>*/}
+                      {/*<Col span={16}>内容</Col>*/}
+                  {/*</div>*/}
+              {/*</Row>*/}
           </div>
       </div>
     );

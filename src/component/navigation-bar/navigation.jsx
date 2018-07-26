@@ -22,7 +22,7 @@ export default class Main extends Component {
         console.log('--->' + selfPic1);
         const selfPic = (
             <div>
-                <img src={selfPic1} style={{width: '400px', height: '700px'}}></img>
+                <img src={selfPic1} className='self-pic'></img>
             </div>
         );
         return (
