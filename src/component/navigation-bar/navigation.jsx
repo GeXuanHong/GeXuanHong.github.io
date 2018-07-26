@@ -40,10 +40,10 @@ export default class Main extends Component {
                     </div>
                     <div className='user'>
                         <Icon type="github" className='github'></Icon>
-                        <Popover content={wechatQcode}>
+                        <Popover placement="bottom" content={wechatQcode}>
                             <Icon type="wechat" className='wechat'></Icon>
                         </Popover>
-                        <Popover content={selfPic}>
+                        <Popover placement="bottom" content={selfPic}>
                             <Avatar style={{ backgroundColor: '#87d068' }}>Xuan</Avatar>
                         </Popover>
                     </div>
