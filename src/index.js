@@ -5,13 +5,14 @@ import App from './App';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import Main from "./pages/main/main";
+import Navbar from "./component/navigation-bar/navigation";
 
 ReactDOM.render(
     <Router>
         <div>
             <Switch>
                 <Route path="/main" component={Main}/>
-                <Route path="/" component={App}/>
+                <Route path="/" component={Navbar}/>
             </Switch>
         </div>
     </Router>,

@@ -1,0 +1,70 @@
+a{
+  cursor: pointer;
+}
+
+.navigation{
+  position: relative;
+  z-index: 3;
+  border-top: 3px solid #009a61;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1), 0 1px rgba(0,0,0,0.1);
+  background: #fafafa;
+  .nav-content{
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 64px;
+    line-height: 64px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 16px;
+    .logo{
+      display: flex;
+      height: 30px;
+      line-height: 30px;
+    }
+    .tab{
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      line-height: 30px;
+      margin-right: 18px;
+      margin-left: 27px;
+      .tab-item{
+        display: inline-block;
+        padding: 0 12px;
+        color: #757575;
+        border-radius: 4px;
+        font-size: 16px;
+        &:hover{
+          background-color: #F3F3F3;
+          color: #009a61;
+        }
+      }
+    }
+    .github{
+      color: #757575;
+      font-size: 20px;
+      margin-right: 25px;
+      cursor: pointer;
+      &:hover{
+        color: #87d068;
+      }
+    }
+    .wechat{
+      color: #757575;
+      font-size: 20px;
+      margin-right: 25px;
+      cursor: pointer;
+      &:hover{
+        color: #87d068;
+    }
+    }
+    .user{
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
