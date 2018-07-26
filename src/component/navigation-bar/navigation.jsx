@@ -4,7 +4,7 @@ import "../../assets/css/common.less"
 import { Avatar, Popover, Icon } from 'antd';
 import Qcode from '../../assets/img/Qcode.png';
 import { Link } from 'react-router-dom';
-
+import selfPic1 from '../../assets/img/520.jpg';
 export default class Main extends Component {
     constructor(props) {
         super(props);
@@ -17,6 +17,12 @@ export default class Main extends Component {
         const wechatQcode = (
             <div>
                 <img src={Qcode} style={{width: '200px', height: '200px'}}></img>
+            </div>
+        );
+        console.log('--->' + selfPic1);
+        const selfPic = (
+            <div>
+                <img src={selfPic1} style={{width: '400px', height: '700px'}}></img>
             </div>
         );
         return (
@@ -37,7 +43,9 @@ export default class Main extends Component {
                         <Popover content={wechatQcode}>
                             <Icon type="wechat" className='wechat'></Icon>
                         </Popover>
-                        <Avatar style={{ backgroundColor: '#87d068' }}>Xuan</Avatar>
+                        <Popover content={selfPic}>
+                            <Avatar style={{ backgroundColor: '#87d068' }}>Xuan</Avatar>
+                        </Popover>
                     </div>
                 </div>
             </div>
