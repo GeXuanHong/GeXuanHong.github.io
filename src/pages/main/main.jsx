@@ -21,11 +21,9 @@ export default class Main extends Component {
 
     getBlogList () {
         let app = require('../../assets/static_JSON/blog.json');
-        let list = [];
-        list.push(app);
-        this.setState({blogList: list}, function () {
-            console.log('----' + JSON.stringify(this.state.blogList));
-        });
+        let list = app.data;
+        console.log(list);
+        this.setState({blogList: list});
         //axios获取数据
         // axios.get(url).then(function (res) {
         //     console.log(res);
@@ -44,18 +42,25 @@ export default class Main extends Component {
                     <div><h3>3</h3></div>
                     <div><h3>4</h3></div>
                 </Carousel>
-                {blogList.map((item, index) => {
-                    return (
-                        <div key={index} className='blog'>
-                            <div className='blog-title'>
-                                {item.data[index].title}
+                <div className='news-list'>
+                    {blogList.map((item, index) => {
+                        return (
+                            <div key={index} className='blog'>
+                                <div className='blog-title'>
+                                    {item.title}
+                                </div>
+                                <div className='layout'>
+                                    <div className='blog-intro line-limit r3'>
+                                        {item.intro}
+                                    </div>
+                                    <div className='blog-pic'>
+                                        <img src={item.blogPic}></img>
+                                    </div>
+                                </div>
                             </div>
-                            <div className='blog-intro'>
-                                {item.data[index].intro}
-                            </div>
-                        </div>
-                    )
-                })}
+                        )
+                    })}
+                </div>
             </div>
         )
     }

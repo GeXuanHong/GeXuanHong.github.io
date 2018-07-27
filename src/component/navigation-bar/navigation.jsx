@@ -47,6 +47,17 @@ export default class Main extends Component {
                             <Avatar style={{ backgroundColor: '#87d068' }}>Xuan</Avatar>
                         </Popover>
                     </div>
+                    <div className='bottom-nav'>
+                        <a className='btn-nav'>
+                            <Icon type="bars" ><span className='text'>首页</span></Icon>
+                        </a>
+                        <a className='btn-nav'>
+                            <Icon type="form" ><span className='text'>笔记</span></Icon>
+                        </a>
+                        <a className='btn-nav'>
+                            <Icon type="share-alt"><span className='text'>分享</span></Icon>
+                        </a>
+                    </div>
                 </div>
             </div>
         )

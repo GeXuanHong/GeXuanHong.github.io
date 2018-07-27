@@ -3,7 +3,6 @@ import './App.less';
 import './assets/css/common.less';
 import Nav from './component/navigation-bar/navigation';
 import Main from './pages/main/main';
-import { Row, Col } from 'antd';
 
 class App extends Component {
   render() {
@@ -11,15 +10,12 @@ class App extends Component {
       <div className="App">
           <Nav/>
           <div className='content'>
-              <h1>正在开发中。。。</h1>
-              {/*<Row gutter={48}>*/}
-                  {/*<div className='left'>*/}
-                      {/*<Col span={8}>导航栏</Col>*/}
-                  {/*</div>*/}
-                  {/*<div className='right'>*/}
-                      {/*<Col span={16}>内容</Col>*/}
-                  {/*</div>*/}
-              {/*</Row>*/}
+              <div className='left-part'>
+                  <Main/>
+              </div>
+              <div className='right-part'>
+                  <h1 style={{color: '#fff'}}>导航栏</h1>
+              </div>
           </div>
       </div>
     );

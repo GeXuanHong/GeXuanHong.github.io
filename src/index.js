@@ -12,7 +12,7 @@ ReactDOM.render(
         <div>
             <Switch>
                 <Route path="/main" component={Main}/>
-                <Route path="/" component={App}/>
+                <Route path="/" component={Navbar}/>
             </Switch>
         </div>
     </Router>,
